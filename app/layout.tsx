@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
+  title: "Access App",
   description: "Created with v0",
   generator: "v0.app",
 }
