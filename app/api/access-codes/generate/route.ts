@@ -103,7 +103,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: `${newCodes.length} codes generated and sent to ${email}`,
+        message: `${newCodes.length} codes generated and sent to ${mailOptions.to}`,
         codesCount: newCodes.length,
       },
       { status: 200 },
