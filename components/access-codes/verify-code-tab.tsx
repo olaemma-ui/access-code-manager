@@ -24,7 +24,7 @@ export function VerifyCodeTab({ onSuccess }: VerifyCodeTabProps) {
     e.preventDefault();
 
     if (!code.trim()) {
-      setErrorMessage("lease enter an access code");
+      setErrorMessage("Please enter an access code");
       setMessage(null);
       return;
     }

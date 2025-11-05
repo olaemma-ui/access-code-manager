@@ -3,13 +3,10 @@
 import type React from "react";
 import { useState } from "react";
 import { StyledButton, StyledInput } from "@/components/ui/styled";
-import {
-  X,
-  TicketCheck,
-} from "lucide-react";
+import { X, TicketCheck } from "lucide-react";
 import { CreateCodeTab } from "../access-codes/create-code-tab";
 import { VerifyCodeTab } from "../access-codes/verify-code-tab";
-
+import Image from "next/image";
 
 export function AuthCard() {
   const [activeTab, setActiveTab] = useState("verify");
@@ -22,9 +19,16 @@ export function AuthCard() {
 
   return (
     <div className="w-full max-w-lg mx-auto">
-      <div className="bg-black/40 backdrop-blur-xl border border-white/10 rounded-4xl p-8">
+      <div className="bg-black/40 backdrop-blur-xl border border-white/10 rounded-4xl p-8 pt-0 px-0">
+        <Image
+          src={"/image-1.jpeg"}
+          className="w-full h-[250px] rounded-t-4xl pb-8"
+          width={300}
+          height={50}
+          alt="Image"
+        />
         {/* Header with tabs and close button */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-8 px-8">
           <div className="flex bg-black/30 backdrop-blur-sm rounded-full p-1 border border-white/10">
             <button
               onClick={() => setActiveTab("verify")}
@@ -52,11 +56,11 @@ export function AuthCard() {
           </button>
         </div>
 
-        <h1 className="text-3xl font-normal text-white mb-8 transition-all duration-300">
+        <h1 className="text-3xl font-normal px-8 text-white mb-8 transition-all duration-300">
           {activeTab === "generate" ? "Generate Code" : "Verify Code"}
         </h1>
 
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden px-8">
           <div
             className={`transition-all duration-500 ease-in-out transform ${
               activeTab === "generate"

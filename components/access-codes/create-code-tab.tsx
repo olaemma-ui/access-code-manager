@@ -111,7 +111,7 @@ export function CreateCodeTab({ onSuccess }: CreateCodeTabProps) {
               setTotalCodes(e.target.value)
             }
             className="pl-12"
-            placeholder="Code eeded"
+            placeholder="Code required"
           />
         </div>
 

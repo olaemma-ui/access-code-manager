@@ -12,7 +12,7 @@ export default function AuthPage() {
     <div
       className="min-h-screen flex items-center justify-center p-4-"
       style={{
-        backgroundImage: "url('/image.jpeg')",
+        backgroundImage: "url('/image-.jpeg')",
         backgroundSize: "contain",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
